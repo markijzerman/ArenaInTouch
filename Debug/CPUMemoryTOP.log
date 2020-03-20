@@ -1,0 +1,7 @@
+﻿  CPUMemoryTOP.cpp
+  Notice: Using GenICam with untested compiler, version 1924 detected!
+  Following versions were tested: 1400, 1500, 1600, 1700, 1800, 1900.
+  FrameQueue.cpp
+  Generating Code...
+     Creating library C:\Users\marki\Documents\Projects\cplusplus\ArenaInTouch\Debug\CPUMemoryTOP.lib and object C:\Users\marki\Documents\Projects\cplusplus\ArenaInTouch\Debug\CPUMemoryTOP.exp
+  CPUMemoryTOP.vcxproj -> C:\Users\marki\Documents\Projects\cplusplus\ArenaInTouch\Debug\CPUMemoryTOP.dll
