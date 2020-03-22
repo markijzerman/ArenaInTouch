@@ -162,89 +162,11 @@ CPUMemoryTOP::execute(TOP_OutputFormatSpecs* output,
 {
 	myExecuteCount++;
 
-
-#ifdef THREADING_EXAMPLE
-	mySettingsLock.lock();
-#endif
-
 	double speed = inputs->getParDouble("Speed");
 	mySpeed = speed;
 
 	myBrightness = inputs->getParDouble("Brightness");
 
-	// See comments at the top of this file to information about the threading
-	// example mode for this project.
-#ifdef THREADING_EXAMPLE
-	mySettingsLock.unlock();
-
-	// This syncs up the buffers in the frame queue with what the
-	// node is offering
-	myFrameQueue.sync(output);
-
-	if (!myThread)
-	{
-		myThread = new std::thread(
-			[this]()
-			{
-				std::random_device rd;
-				std::mt19937 mt(rd());
-
-				// We are going to generate new frame data at irregular interval
-				std::uniform_real_distribution<double> dist(10.0, 40.0);
-
-				// Exit when our owner tells us to
-				while (!this->myThreadShouldExit)
-				{
-#ifdef THREADING_SIGNALED_PRODUCER
-					this->waitForMoreWork();
-					// We may be waking up because the owner is trying to shut down
-					if (myThreadShouldExit)
-					{
-						break;
-					}
-#else
-					auto begin = std::chrono::steady_clock::now();
-#endif
-
-					int width, height;
-					void *buf = this->myFrameQueue.getBufferForUpdate(&width, &height);
-
-					// If there is a buffer to update
-					if (buf)
-					{
-						this->mySettingsLock.lock();
-						myStep += mySpeed;
-						double brightness = myBrightness;
-						this->mySettingsLock.unlock();
-
-						CPUMemoryTOP::fillBuffer((float*)buf, width, height, myStep, brightness);
-
-
-						this->myFrameQueue.updateComplete();
-					}
-
-#ifndef THREADING_SIGNALED_PRODUCER
-					auto end = std::chrono::steady_clock::now();
-					auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-
-					// Sleep for a 15.5ms. We want our loops to be 16.666ms, so this give some wiggle wrong.
-					// In almost all cases we wouldn't be manually sleeping, but instead sleeping
-					// using a function from the SDK of the device that we are reading.
-					std::this_thread::sleep_for(std::chrono::microseconds(15500 - duration));
-#endif
-				}
-			});
-	}
-
-	// Tries to assign a buffer to be uploaded to the TOP
-	myFrameQueue.sendBufferForUpload(output);
-
-#ifdef THREADING_SIGNALED_PRODUCER
-	// Tell the thread to make another frame
-	startMoreWork();
-#endif
-
-#else
 
 	myStep += speed;
     int textureMemoryLocation = 0;
@@ -252,10 +174,8 @@ CPUMemoryTOP::execute(TOP_OutputFormatSpecs* output,
 
 	fillBuffer(mem, output->width, output->height, myStep, myBrightness);
 
-	// Tell the TOP which buffer to upload. In this simple example we are always filling and uploading buffer 0
+	// Tell the TOP which buffer to upload. In thisfte simple example we are always filling and uploading buffer 0
     output->newCPUPixelDataLocation = textureMemoryLocation;
-
-#endif
 
 }
 
