@@ -1,0 +1,129 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (Cpp_Acquisition.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Cpp_Acquisition.cpp
+Cpp_Acquisition.cpp(51): error C2144: syntax error: 'void' should be preceded by ';'
+Cpp_Acquisition.cpp(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Cpp_Acquisition.cpp(51): error C2065: 'TOP_PluginInfo': undeclared identifier
+Cpp_Acquisition.cpp(51): error C2065: 'info': undeclared identifier
+Cpp_Acquisition.cpp(51): error C2182: 'FillTOPPluginInfo': illegal use of type 'void'
+Cpp_Acquisition.cpp(52): error C2448: 'FillTOPPluginInfo': function-style initializer appears to be a function definition
+Cpp_Acquisition.cpp(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Cpp_Acquisition.cpp(80): error C2086: 'int DLLEXPORT': redefinition
+  Cpp_Acquisition.cpp(50): note: see declaration of 'DLLEXPORT'
+Cpp_Acquisition.cpp(80): error C2146: syntax error: missing ';' before identifier 'TOP_CPlusPlusBase'
+Cpp_Acquisition.cpp(82): error C2143: syntax error: missing ';' before '{'
+Cpp_Acquisition.cpp(82): error C2447: '{': missing function header (old-style formal list?)
+Cpp_Acquisition.cpp(90): error C2144: syntax error: 'void' should be preceded by ';'
+Cpp_Acquisition.cpp(90): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Cpp_Acquisition.cpp(90): error C2086: 'int DLLEXPORT': redefinition
+  Cpp_Acquisition.cpp(50): note: see declaration of 'DLLEXPORT'
+Cpp_Acquisition.cpp(90): error C2065: 'TOP_CPlusPlusBase': undeclared identifier
+Cpp_Acquisition.cpp(90): error C2065: 'instance': undeclared identifier
+Cpp_Acquisition.cpp(90): error C2065: 'TOP_Context': undeclared identifier
+Cpp_Acquisition.cpp(90): error C2065: 'context': undeclared identifier
+Cpp_Acquisition.cpp(90): error C2182: 'DestroyTOPInstance': illegal use of type 'void'
+Cpp_Acquisition.cpp(91): error C2448: 'DestroyTOPInstance': function-style initializer appears to be a function definition
+Cpp_Acquisition.cpp(102): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(102): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Cpp_Acquisition.cpp(102): error C2143: syntax error: missing ',' before '*'
+Cpp_Acquisition.cpp(103): error C2065: 'info': undeclared identifier
+Cpp_Acquisition.cpp(107): error C2550: 'CPUMemoryTOP': constructor initializer lists are only allowed on constructor definitions
+Cpp_Acquisition.cpp(108): error C2065: 'myExecuteCount': undeclared identifier
+Cpp_Acquisition.cpp(109): error C2065: 'myStep': undeclared identifier
+Cpp_Acquisition.cpp(110): error C2065: 'myBrightness': undeclared identifier
+Cpp_Acquisition.cpp(112): warning C4508: 'CPUMemoryTOP': function should return a value; 'void' return type assumed
+Cpp_Acquisition.cpp(114): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(115): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Cpp_Acquisition.cpp(131): warning C4508: 'CPUMemoryTOP': function should return a value; 'void' return type assumed
+Cpp_Acquisition.cpp(134): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(134): error C2065: 'TOP_GeneralInfo': undeclared identifier
+Cpp_Acquisition.cpp(134): error C2065: 'ginfo': undeclared identifier
+Cpp_Acquisition.cpp(134): error C2059: syntax error: 'const'
+Cpp_Acquisition.cpp(135): error C2143: syntax error: missing ';' before '{'
+Cpp_Acquisition.cpp(135): error C2447: '{': missing function header (old-style formal list?)
+Cpp_Acquisition.cpp(141): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(141): error C2065: 'TOP_OutputFormat': undeclared identifier
+Cpp_Acquisition.cpp(141): error C2065: 'format': undeclared identifier
+Cpp_Acquisition.cpp(141): error C2059: syntax error: 'const'
+Cpp_Acquisition.cpp(142): error C2143: syntax error: missing ';' before '{'
+Cpp_Acquisition.cpp(142): error C2447: '{': missing function header (old-style formal list?)
+Cpp_Acquisition.cpp(153): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(153): error C2065: 'TOP_OutputFormatSpecs': undeclared identifier
+Cpp_Acquisition.cpp(153): error C2065: 'output': undeclared identifier
+Cpp_Acquisition.cpp(154): error C2059: syntax error: 'const'
+Cpp_Acquisition.cpp(157): error C2143: syntax error: missing ';' before '{'
+Cpp_Acquisition.cpp(157): error C2447: '{': missing function header (old-style formal list?)
+Cpp_Acquisition.cpp(178): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(209): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(212): error C2039: 'unique_lock': is not a member of 'std'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\chrono(20): note: see declaration of 'std'
+Cpp_Acquisition.cpp(212): error C2065: 'unique_lock': undeclared identifier
+Cpp_Acquisition.cpp(212): error C2039: 'mutex': is not a member of 'std'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\chrono(20): note: see declaration of 'std'
+Cpp_Acquisition.cpp(212): error C2065: 'mutex': undeclared identifier
+Cpp_Acquisition.cpp(212): error C2065: 'myConditionLock': undeclared identifier
+Cpp_Acquisition.cpp(212): error C3861: 'lck': identifier not found
+Cpp_Acquisition.cpp(213): error C2065: 'myStartWork': undeclared identifier
+Cpp_Acquisition.cpp(215): error C2065: 'myCondition': undeclared identifier
+Cpp_Acquisition.cpp(215): error C2228: left of '.notify_one' must have class/struct/union
+  Cpp_Acquisition.cpp(215): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(219): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(221): error C2039: 'unique_lock': is not a member of 'std'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\chrono(20): note: see declaration of 'std'
+Cpp_Acquisition.cpp(221): error C2065: 'unique_lock': undeclared identifier
+Cpp_Acquisition.cpp(221): error C2039: 'mutex': is not a member of 'std'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\chrono(20): note: see declaration of 'std'
+Cpp_Acquisition.cpp(221): error C2065: 'mutex': undeclared identifier
+Cpp_Acquisition.cpp(221): error C2065: 'myConditionLock': undeclared identifier
+Cpp_Acquisition.cpp(221): error C3861: 'lck': identifier not found
+Cpp_Acquisition.cpp(222): error C2065: 'myCondition': undeclared identifier
+Cpp_Acquisition.cpp(222): error C2228: left of '.wait' must have class/struct/union
+  Cpp_Acquisition.cpp(222): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(222): error C2065: 'lck': undeclared identifier
+Cpp_Acquisition.cpp(222): error C3482: 'this' can only be used as a lambda capture within a non-static member function
+Cpp_Acquisition.cpp(222): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+Cpp_Acquisition.cpp(222): error C2039: 'myStartWork': is not a member of 'waitForMoreWork::<lambda_10bc7202efa8e11207558e0bbb5b599e>'
+  Cpp_Acquisition.cpp(222): note: see declaration of 'waitForMoreWork::<lambda_10bc7202efa8e11207558e0bbb5b599e>'
+Cpp_Acquisition.cpp(222): error C2039: '__this': is not a member of 'waitForMoreWork::<lambda_10bc7202efa8e11207558e0bbb5b599e>'
+  Cpp_Acquisition.cpp(222): note: see declaration of 'waitForMoreWork::<lambda_10bc7202efa8e11207558e0bbb5b599e>'
+Cpp_Acquisition.cpp(222): error C2228: left of '.load' must have class/struct/union
+Cpp_Acquisition.cpp(223): error C2065: 'myStartWork': undeclared identifier
+Cpp_Acquisition.cpp(227): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(235): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(235): error C2061: syntax error: identifier 'OP_InfoCHOPChan'
+Cpp_Acquisition.cpp(242): error C2065: 'chan': undeclared identifier
+Cpp_Acquisition.cpp(242): error C2227: left of '->name' must point to class/struct/union/generic type
+  Cpp_Acquisition.cpp(242): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(242): error C2227: left of '->setString' must point to class/struct/union/generic type
+Cpp_Acquisition.cpp(243): error C2065: 'chan': undeclared identifier
+Cpp_Acquisition.cpp(243): error C2227: left of '->value' must point to class/struct/union/generic type
+  Cpp_Acquisition.cpp(243): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(243): error C2065: 'myExecuteCount': undeclared identifier
+Cpp_Acquisition.cpp(248): error C2065: 'chan': undeclared identifier
+Cpp_Acquisition.cpp(248): error C2227: left of '->name' must point to class/struct/union/generic type
+  Cpp_Acquisition.cpp(248): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(248): error C2227: left of '->setString' must point to class/struct/union/generic type
+Cpp_Acquisition.cpp(249): error C2065: 'chan': undeclared identifier
+Cpp_Acquisition.cpp(249): error C2227: left of '->value' must point to class/struct/union/generic type
+  Cpp_Acquisition.cpp(249): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(249): error C2065: 'myStep': undeclared identifier
+Cpp_Acquisition.cpp(254): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(254): error C2065: 'OP_InfoDATSize': undeclared identifier
+Cpp_Acquisition.cpp(254): error C2065: 'infoSize': undeclared identifier
+Cpp_Acquisition.cpp(254): error C2062: type 'void' unexpected
+Cpp_Acquisition.cpp(255): error C2143: syntax error: missing ';' before '{'
+Cpp_Acquisition.cpp(255): error C2447: '{': missing function header (old-style formal list?)
+Cpp_Acquisition.cpp(265): error C2653: 'CPUMemoryTOP': is not a class or namespace name
+Cpp_Acquisition.cpp(267): error C2061: syntax error: identifier 'OP_InfoDATEntries'
+Cpp_Acquisition.cpp(280): error C2065: 'entries': undeclared identifier
+Cpp_Acquisition.cpp(280): error C2227: left of '->values' must point to class/struct/union/generic type
+  Cpp_Acquisition.cpp(280): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(280): error C2227: left of '->setString' must point to class/struct/union/generic type
+Cpp_Acquisition.cpp(284): error C2065: 'myExecuteCount': undeclared identifier
+Cpp_Acquisition.cpp(288): error C2065: 'entries': undeclared identifier
+Cpp_Acquisition.cpp(288): error C2227: left of '->values' must point to class/struct/union/generic type
+  Cpp_Acquisition.cpp(288): note: type is 'unknown-type'
+Cpp_Acquisition.cpp(288): error C2227: left of '->setString' must point to class/struct/union/generic type
+Cpp_Acquisition.cpp(298): error C2065: 'entries': undeclared identifier
+Cpp_Acquisition.cpp(298): fatal error C1003: error count exceeds 100; stopping compilation
+  FrameQueue.cpp
+FrameQueue.cpp(233): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?

@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Cpp_Acquisition.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Cpp_Acquisition.cpp
+Cpp_Acquisition.cpp(179): warning C4800: 'TOP_OutputFormat *': forcing value to bool 'true' or 'false' (performance warning)
+Cpp_Acquisition.cpp(327): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+Cpp_Acquisition.cpp(328): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+Cpp_Acquisition.cpp(330): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Cpp_Acquisition.cpp(340): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Cpp_Acquisition.cpp(341): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Cpp_Acquisition.cpp(342): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Cpp_Acquisition_TD.vcxproj -> C:\ProgramData\Lucid Vision Labs\Examples\src\C++ Source Code Examples\OutputDirectory\Windows\x64Debug\Cpp_Acquisition_TDd_v140.dll
+  Cpp_Acquisition_TD.vcxproj -> C:\ProgramData\Lucid Vision Labs\Examples\src\C++ Source Code Examples\OutputDirectory\Windows\x64Debug\Cpp_Acquisition_TDd_v140.pdb (Full PDB)

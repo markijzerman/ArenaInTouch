@@ -1,0 +1,7 @@
+﻿  Generating code
+  0 of 40 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Cpp_Acquisition.vcxproj -> C:\ProgramData\Lucid Vision Labs\Examples\src\C++ Source Code Examples\OutputDirectory\Windows\x64Release\Cpp_Acquisition_v140.exe
+  Cpp_Acquisition.vcxproj -> C:\ProgramData\Lucid Vision Labs\Examples\src\C++ Source Code Examples\OutputDirectory\Windows\x64Release\Cpp_Acquisition_v140.pdb (Full PDB)

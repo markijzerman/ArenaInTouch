@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  Cpp_Acquisition.cpp
+  Notice: Using GenICam with untested compiler, version 1925 detected!
+  Following versions were tested: 1400, 1500, 1600, 1700, 1800, 1900.
+LINK : fatal error LNK1181: cannot open input file 'Arena_v142.lib'
